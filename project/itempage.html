@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SKKU FLEA MARKET</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="script.js">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/ff96cc4049.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+    <header>
+      <div class="titlewrapper">
+        <div class="headerlogin">
+          <button class="loginbutton" onclick="location.href='login.html'">LOGIN / SIGNUP</button>
+        </div><br>
+        <div class="headertitle"><a href="project.html">SKKU FLEA MARKET</a></div>
+      </div>
+      <div class="headersearch">
+        <!--연동할 action=php파일 경로에 method 방식으로 값을 넘겨줌-->
+        <!--method는 두가지 방식: get 또는 post, post가 데이터 숨김-->
+        <form class="headersearchform" action="itemlist.php" method="get">
+          <input type="text" class="searchinput">
+          <button class="searchbutton"><i class="fas fa-search fa-2x"></i></button>
+        </form>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <div class="placeorder">
+        <!--order place: seller로 로그인했을 때만 나타나는 항목-->
+      </div>
+      <div class="category">
+        <div class="categorylist">
+          <!--java로 database에서 카테고리 리스트를 받아서 출력할 수 있다면 수정-->
+          <li>Bathroom</li>
+          <li>Books
+            <ol>
+              <li>Literature</li>
+              <li>Science</li>
+            </ol>
+          </li>
+          <li>Computers</li>
+          <li>Electronics</li>
+          <li>Fashion</li>
+          <li>Furnitures</li>
+          <li>Health</li>
+          <li>Industrial</li>
+          <li>Kitchen</li>
+          <li>Pet Supplies</li>
+          <li>Software</li>
+          <li>Sports & Outdoors</li>
+          <li>Tools</li>
+        </div>
+      </div>
+      <div class="contents">
+        <!-- 아이템 상세 페이지 -->
+        <div class="itempic"><img src="img\pants1.jpg"></img></div>
+        <div class="itemdetail">
+          <div class="group">
+            <div class="groupname"><!--항목-->Name</div>
+            <div class="groupdetail"><!--내용-->Fancy pants</div>
+          </div>
+          <div class="group">
+            <div class="groupname"><!--항목-->Quantity</div>
+            <div class="groupdetail"><!--내용-->1</div>
+          </div>
+          <div class="group">
+            <div class="groupname"><!--항목-->Price / Starting Price</div>
+            <div class="groupdetail"><!--내용-->50000</div>
+          </div>
+          <div class="group">
+            <div class="groupname"><!--항목-->Seller Comment</div>
+            <div class="groupdetail"><!--내용-->call me 010-1234-5678 adse 12 313 1zsdf AS</div>
+          </div>
+        </div>
+        <div class="itemcomment">
+          <!--바이어가 덧글, 입찰-->
+          <textarea class="itemcommenttext" rows="8" cols="80"></textarea><br>
+          <button class="commentsubmit">submit</button>
+        </div>
+        <div class="commentlist">
+          <!--현재까지의 덧글목록 (역순정렬, 등록일시 표시)-->
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
+
+  </body>
+</html>
