@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>SKKU FLEA MARKET</title>
 
@@ -12,70 +13,84 @@
     <!--fontawesome-->
     <script src="https://kit.fontawesome.com/ff96cc4049.js" crossorigin="anonymous"></script>
 
-  </head>
-  <body>
+</head>
+
+<body>
 
     <header>
-      <div class="titlewrapper">
-        <div class="headerlogin">
-          <button class="loginbutton" onclick="location.href='login.html'">LOGIN / SIGNUP</button>
-        </div><br>
-        <div class="headertitle"><a href="project.html">SKKU FLEA MARKET</a></div>
-      </div>
-      <div class="headersearch">
-        <!--연동할 action=php파일 경로에 method 방식으로 값을 넘겨줌-->
-        <!--method는 두가지 방식: get 또는 post, post가 데이터 숨김-->
-        <form class="headersearchform" action="itemlist.php" method="get">
-          <input type="text" class="searchinput">
-          <button class="searchbutton"><i class="fas fa-search fa-2x"></i></button>
-        </form>
-      </div>
+        <div class="titlewrapper">
+            <div class="headerlogin">
+                <button class="loginbutton" onclick="location.href='login.html'">LOGIN / SIGNUP</button>
+            </div><br>
+            <div class="headertitle"><a href="project.html">SKKU FLEA MARKET</a></div>
+        </div>
+        <div class="headersearch">
+            <!--연동할 action=php파일 경로에 method 방식으로 값을 넘겨줌-->
+            <!--method는 두가지 방식: get 또는 post, post가 데이터 숨김-->
+            <form class="headersearchform" action="itemlist.php" method="get">
+                <input type="text" class="searchinput">
+                <button class="searchbutton"><i class="fas fa-search fa-2x"></i></button>
+            </form>
+        </div>
     </header>
 
     <div class="wrapper">
-      <div class="placeorder">
-        <!--order place: seller로 로그인했을 때만 나타나는 항목-->
-      </div>
-      <div class="category">
-        <div class="categorylist">
-          <!--java로 database에서 카테고리 리스트를 받아서 출력할 수 있다면 수정-->
-          <li>Bathroom</li>
-          <li>Books
-            <ol>
-              <li>Literature</li>
-              <li>Science</li>
-            </ol>
-          </li>
-          <li>Computers</li>
-          <li>Electronics</li>
-          <li>Fashion</li>
-          <li>Furnitures</li>
-          <li>Health</li>
-          <li>Industrial</li>
-          <li>Kitchen</li>
-          <li>Pet Supplies</li>
-          <li>Software</li>
-          <li>Sports & Outdoors</li>
-          <li>Tools</li>
+        <div class="placeorder">
+            <!--order place: seller로 로그인했을 때만 나타나는 항목-->
         </div>
-      </div>
-      <div class="contents">
-        <!--동적 컨텐츠: 인기 상품, 또는 신규 상품 우선으로 노출-->
-        <!--java로 데이터 가져오기 https://develop-dream.tistory.com/18 -->
-        <a href="#아이템 상세 페이지"><div class="itemwrap">
-          <div class="itemthumb"><!--상품 이미지 썸네일--><img class="" src="img\pants1.jpg"></img></div>
-          <div class="itemname"><!--[판매/경매]상품 이름--><span>[sell] fancy pants</span></div>
-          <div class="itemprice"><!--상품 가격, 경매의 경우 최고입찰가--><span>50000</span></div>
-        </div></a>
-        <a href="#아이템 상세 페이지"><div class="itemwrap">
-          <div class="itemthumb"><!--상품 이미지 썸네일--><img class="itemthumb1" src="img\pants1.jpg"></img></div>
-          <div class="itemname"><!--[판매/경매]상품 이름--><span>[auction] used pants</span></div>
-          <div class="itemprice"><!--상품 가격, 경매의 경우 최고입찰가--><span>highest bid: 50000</span></div>
-        </div></a>
-      </div>
+        <div class="category">
+            <div class="categorylist">
+                <!--java로 database에서 카테고리 리스트를 받아서 출력할 수 있다면 수정-->
+                <li>Bathroom</li>
+                <li>Books
+                    <ol>
+                        <li>Literature</li>
+                        <li>Science</li>
+                    </ol>
+                </li>
+                <li>Computers</li>
+                <li>Electronics</li>
+                <li>Fashion</li>
+                <li>Furnitures</li>
+                <li>Health</li>
+                <li>Industrial</li>
+                <li>Kitchen</li>
+                <li>Pet Supplies</li>
+                <li>Software</li>
+                <li>Sports & Outdoors</li>
+                <li>Tools</li>
+            </div>
+        </div>
+        <div class="contents">
+            <!--동적 컨텐츠: 인기 상품, 또는 신규 상품 우선으로 노출-->
+            <!--java로 데이터 가져오기 https://develop-dream.tistory.com/18 -->
+            <a href="http://127.0.0.1:5500/itempage.html">
+                <div class="itemwrap">
+                    <div class="itemthumb">
+                        <!--상품 이미지 썸네일--><img class="" src="img\pants1.jpg"></img>
+                    </div>
+                    <div class="itemname">
+                        <!--[판매/경매]상품 이름--><span>[sell] fancy pants</span></div>
+                    <div class="itemprice">
+                        <!--상품 가격, 경매의 경우 최고입찰가--><span>50000</span></div>
+                </div>
+            </a>
+            <a href="http://127.0.0.1:5500/itempage.html">
+                <div class="itemwrap">
+                    <div class="itemthumb">
+                        <!--상품 이미지 썸네일--><img class="itemthumb1" src="img\pants1.jpg"></img>
+                    </div>
+                    <div class="itemname">
+                        <!--[판매/경매]상품 이름--><span>[auction] used pants</span></div>
+                    <div class="itemprice">
+                        <!--상품 가격, 경매의 경우 최고입찰가--><span>highest bid: 50000</span></div>
+                </div>
+            </a>
+        </div>
     </div>
 
     <footer></footer>
 
-  </body>
+</body>
+
 </html>
